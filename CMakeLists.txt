@@ -5,3 +5,4 @@
  include_directories( ${Boost_INCLUDE_DIRS} )  
  add_executable( boost_cmake_example main.cc )  
  target_link_libraries( boost_cmake_example ${Boost_SYSTEM_LIBRARY} )  
+ target_link_libraries( boost_cmake_example ${Boost_TEST_EXEC_MONITOR_LIBRARY} )  
