@@ -1,0 +1,7 @@
+ project( boost_cmake_example )  
+ cmake_minimum_required( VERSION 2.8 )  
+ find_package( Boost COMPONENTS system REQUIRED )  
+ link_directories( ${Boost_LIBRARY_DIRS} )  
+ include_directories( ${Boost_INCLUDE_DIRS} )  
+ add_executable( boost_cmake_example main.cc )  
+ target_link_libraries( boost_cmake_example ${Boost_SYSTEM_LIBRARY} )  
